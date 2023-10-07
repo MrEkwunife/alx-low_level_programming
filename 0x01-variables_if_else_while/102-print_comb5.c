@@ -16,11 +16,11 @@ int main(void)
 		{
 			if (fNum < sNum)
 			{
-				putchar(48 + (fNum / 10));
-				putchar(48 + (fNum % 10));
+				putchar((fNum / 10) + 48);
+				putchar((fNum % 10) + 48);
 				putchar(' ');
-				putchar(48 + (sNum / 10));
-				putchar(48 + (sNum % 10));
+				putchar((sNum / 10) + 48);
+				putchar((sNum % 10) + 48);
 
 				if (fNum < 98 && sNum < 99)
 				{
