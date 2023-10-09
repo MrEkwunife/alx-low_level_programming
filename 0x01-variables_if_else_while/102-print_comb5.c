@@ -1,36 +1,33 @@
 #include <stdio.h>
 /**
- *main - possible combination of two digits numbers
+ * main - prints numbers
  *
- * Return: 0;
+ * Return - Null
  */
 
 int main(void)
 {
-	int fNum;
-	int sNum;
+	int n1;
+	int n2;
 
-	for (fNum = 0; fNum < 100; fNum++)
+	for (n1 = 0; n1 <= 98; n1++)
 	{
-		for (sNum = 0; sNum < 100; sNum++)
+		for (n2 = 1; n2 <= 99; n2++)
 		{
-			if (fNum < sNum)
-			{
-				putchar((fNum / 10) + 48);
-				putchar((fNum % 10) + 48);
-				putchar(' ');
-				putchar((sNum / 10) + 48);
-				putchar((sNum % 10) + 48);
+			putchar((n1 / 10) + '0');
+			putchar((n1 % 10) + '0');
+			putchar(' ');
+			putchar((n2 / 10) + '0');
+			putchar((n2 % 10) + '0');
 
-				if (fNum < 98 && sNum < 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			if (n1 != 98 || n2 != 99)
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
 	putchar('\n');
-	return (0);
 
+	return (0);
 }
