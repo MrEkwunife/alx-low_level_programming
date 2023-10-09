@@ -2,7 +2,7 @@
 /**
  * main - prints numbers
  *
- * Return - Null
+ * Return - Zero
  */
 
 int main(void)
