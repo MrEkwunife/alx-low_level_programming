@@ -15,18 +15,19 @@ int main(void)
 	{
 		for (n2 = 1; n2 <= 99; n2++)
 		{
-			putchar((n1 / 10) + '0');
-			putchar((n1 % 10) + '0');
-			putchar(' ');
-			putchar((n2 / 10) + '0');
-			putchar((n2 % 10) + '0');
-
-			if (n1 != 98 || n2 != 99)
+			if (n1 != n2)
 			{
-				putchar(',');
+				putchar((n1 / 10) + '0');
+				putchar((n1 % 10) + '0');
 				putchar(' ');
-			}
-			
+				putchar((n2 / 10) + '0');
+				putchar((n2 % 10) + '0');
+
+				if (n1 != 98 || n2 != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 		}
 	}
 	putchar('\n');
