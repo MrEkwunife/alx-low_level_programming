@@ -2,6 +2,7 @@
 
 /**
  * _islower - returns a value
+ * c: arguement
  *
  * Return: 1 if c is lower, else 0
  */
