@@ -1,0 +1,7 @@
+# Ignore executable file
+
+./app/
+
+# Test files
+
+./testfile/
