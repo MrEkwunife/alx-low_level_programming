@@ -2,7 +2,8 @@
 
 /**
  * print_line - prints a straight line in the terminal
- * @c: para of n
+ *
+ * @n: para of n
  */
 
 void print_line(int n)
