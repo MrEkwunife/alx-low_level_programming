@@ -1,0 +1,5 @@
+# Ignores the executables
+./app/
+
+# Ignores the test files
+./test-file
