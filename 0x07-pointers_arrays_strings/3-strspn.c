@@ -1,28 +1,28 @@
 #include "main.h"
-
 /**
-  * _strspn - locates a character in a string.
-  * @s: param 1
-  * @accept: param 2
-  *
-  * Return: number of bytes
-  */
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int a = 0;
-	unsigned int b;
-	unsigned int c = 0;
+	unsigned int n = 0;
+	int r;
 
-	while (accept[i])
+	while (*s)
 	{
-		b = 0;
-		while (s[b] != 32)
+		for (r = 0; accept[r]; r++)
 		{
-			if (accept[a] == s[b])
-				c++;
-			b++;
+			if (*s == accept[r])
+			{
+				n++;
+				break;
+			}
+			else if (accept[r + 1] == '\0')
+				return (n);
 		}
-		a++;
+		s++;
 	}
-	return (c);
+	return (n);
 }
