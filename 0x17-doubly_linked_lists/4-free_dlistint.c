@@ -1,4 +1,4 @@
-i/*
+/*
  * File: 4-free_dlistint.c
  * Auth: Chimobi E
  */
