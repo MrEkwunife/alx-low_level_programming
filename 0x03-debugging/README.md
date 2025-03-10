@@ -1,1 +1,0 @@
-Debugging with Rubber Duck

@@ -1,5 +1,0 @@
-# ignores the compiled output stored here
-./app/
-
-# ignores the source code for the header file
-./_putchar
