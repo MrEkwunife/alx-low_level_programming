@@ -1,8 +1,12 @@
+*
+!*/
+!*.*
+!.gitignore
+!Makefile
+
 a.out
 _putchar.c
 
-0-putchar
-1-alphabet
-2-alphabet_x10
-
+*-main.c
 *main.c
+_putchar.c
